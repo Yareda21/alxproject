@@ -17,29 +17,22 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="footer-border-t pt-8 sm:pt-24 lg:pt-24">
-          <ul className="footer-flex footer-justify-center footer-gap-4 footer-text-xs lg:footer-justify-end">
+        <div className="footer-bottom">
+          <ul className="footer-custom">
             <li>
-              <a
-                href="#"
-                className="footer-link text-gray-500 transition hover:opacity-75"
-              >
-                <span className="">Facebook</span>
-              </a>
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <a href="">LinkedIn</a>
+            </li>
+            <li>
+              <a href="">Tiktok</a>
+            </li>
+            <li>
+              <a href="">Instagram</a>
             </li>
           </ul>
-
-          <ul className="footer-flex footer-justify-center footer-gap-6 sm:footer-mt-0 lg:footer-justify-end">
-            <li>
-              <a
-                href="#"
-                className="footer-link text-gray-700 transition hover:opacity-75"
-              >
-                <span className="">Instagram</span>
-              </a>
-            </li>
-          </ul>
-          <p>Instagram</p>
+          <h3>Infinity Real Estate Brockers</h3>
         </div>
       </div>
     </footer>

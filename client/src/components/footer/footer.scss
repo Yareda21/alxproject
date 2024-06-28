@@ -1,5 +1,6 @@
 .footer {
   background-color: #ffffff; // bg-white
+  margin-top: 20px;
 }
 
 .footer > div {
@@ -117,5 +118,26 @@
 .hover\:opacity-75 {
   &:hover {
     opacity: 0.75;
+  }
+}
+
+.footer-custom {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: large;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+@media (max-width: 640px) {
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

@@ -1,17 +1,17 @@
 @import "../../responsive.scss";
 
 .container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: scroll;
+  // display: flex;
+  // flex-direction: column;
+  // height: 100%;
+  // overflow: scroll;
 
   .homePage {
     display: flex;
-    height: 100vh;
+    // height: 100vh;
 
     .textContainer {
-      flex: 3;
+      flex: 2;
 
       .wrapper {
         padding-right: 100px;
@@ -92,25 +92,32 @@
       }
     }
   }
-  .titles {
-    text-align: center;
-    margin: 80px 40px 30px 40px;
-    font-size: 35px;
-    font-weight: bold;
-    @include md {
-      font-size: 25px;
-    }
-    @include sm {
-      font-size: 20px;
-      margin-top: 150px;
-    }
-  }
-  .compos {
+
+  .bottom {
     display: flex;
-    flex-wrap: wrap;
-    margin: 10px 5px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-top: 130px;
+
+    .titles {
+      text-align: center;
+      margin: 80px 40px 30px 40px;
+      font-size: 35px;
+      font-weight: bold;
+      @include md {
+        font-size: 25px;
+      }
+      @include sm {
+        font-size: 20px;
+        margin-top: 150px;
+      }
+    }
+    .compos {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 5px;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

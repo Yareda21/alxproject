@@ -41,7 +41,8 @@ function HomePage() {
           <img src="/bg.jpg" alt="" />
         </div>
       </div>
-      <div>
+      <br />
+      <div className="bottom">
         <div className="titles">Popular Featured Homes</div>
         <div className="compos">
           <Realestate

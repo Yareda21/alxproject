@@ -74,15 +74,14 @@
           transition: all 0.3s ease; // Equivalent to transition-all (assuming default duration and easing)
         }
 
-        &:hover .inner {
-          transform: translateY(0); // Equivalent to group-hover:translate-y-0
-          opacity: 1; // Equivalent to group-hover:opacity-100
-        }
-
         .innerp {
           font-size: 0.875rem; // Equivalent to text-sm
           color: #ffffff; // Equivalent to text-white
         }
+      }
+      &:hover .inner {
+        transform: translateY(0); // Equivalent to group-hover:translate-y-0
+        opacity: 1; // Equivalent to group-hover:opacity-100
       }
     }
   }
