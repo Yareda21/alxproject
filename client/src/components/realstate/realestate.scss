@@ -1,0 +1,89 @@
+@import "../../responsive.scss";
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+
+  .class {
+    position: relative;
+    display: block;
+    background-color: black;
+
+    .image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.75;
+      transition: opacity 0.3s ease; // Assuming a transition time and easing function, you can adjust this as needed
+
+      // Group hover effect
+      .group:hover & {
+        opacity: 0.5;
+      }
+    }
+    .element {
+      position: relative;
+      padding: 1rem; // Default padding for all screen sizes
+
+      @media (min-width: 640px) {
+        // Small screens and up (sm)
+        padding: 1.5rem;
+      }
+
+      @media (min-width: 1024px) {
+        // Large screens and up (lg)
+        padding: 2rem;
+      }
+      .para {
+        font-size: 0.875rem; // Equivalent to text-sm
+        font-weight: 500; // Equivalent to font-medium
+        text-transform: uppercase; // Equivalent to uppercase
+        letter-spacing: 0.1em; // Equivalent to tracking-widest
+        color: #ec4899; // Equivalent to text-pink-500
+      }
+      .para2 {
+        font-size: 1.25rem; // Equivalent to text-xl
+        font-weight: 700; // Equivalent to font-bold
+        color: #ffffff; // Equivalent to text-white
+
+        @media (min-width: 640px) {
+          // Small screens and up (sm)
+          font-size: 1.5rem; // Equivalent to text-2xl
+        }
+      }
+      .combo {
+        margin-top: 8rem; // Equivalent to mt-32
+
+        @media (min-width: 640px) {
+          margin-top: 12rem; // Equivalent to sm:mt-48
+        }
+
+        @media (min-width: 1024px) {
+          margin-top: 16rem; // Equivalent to lg:mt-64
+        }
+
+        .inner {
+          transform: translateY(2rem); // Equivalent to translate-y-8
+          opacity: 0; // Equivalent to opacity-0
+          transition: all 0.3s ease; // Equivalent to transition-all (assuming default duration and easing)
+        }
+
+        &:hover .inner {
+          transform: translateY(0); // Equivalent to group-hover:translate-y-0
+          opacity: 1; // Equivalent to group-hover:opacity-100
+        }
+
+        .innerp {
+          font-size: 0.875rem; // Equivalent to text-sm
+          color: #ffffff; // Equivalent to text-white
+        }
+      }
+    }
+  }
+}

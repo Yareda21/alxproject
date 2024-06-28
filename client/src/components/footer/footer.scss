@@ -1,0 +1,121 @@
+.footer {
+  background-color: #ffffff; // bg-white
+}
+
+.footer > div {
+  margin: 0 auto; // mx-auto
+  max-width: 1280px; // max-w-screen-xl
+  padding: 1rem 2rem; // px-4
+  padding-bottom: 2rem; // pb-8
+  padding-top: 4rem; // pt-16
+
+  @media (min-width: 640px) {
+    padding: 1rem 3rem; // sm:px-6
+  }
+
+  @media (min-width: 1024px) {
+    padding: 1rem 4rem; // lg:px-8
+    padding-top: 6rem; // lg:pt-24
+  }
+}
+
+.footer-text-center {
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 1.875rem; // text-3xl
+  font-weight: 800; // font-extrabold
+  color: #333; // text-gray-900
+
+  @media (min-width: 640px) {
+    font-size: 3rem; // sm:text-5xl
+  }
+}
+
+.footer-paragraph {
+  margin: 1rem auto; // mx-auto
+  max-width: 24rem; // max-w-sm
+  color: #666; // text-gray-500
+  margin-top: 1rem; // mt-4
+}
+
+.footer-cta {
+  margin-top: 2rem; // mt-8
+  display: inline-block; // inline-block
+
+  border: 1px solid #4b51cf; // border-indigo-600
+  padding: 0.75rem 2rem; // px-12 py-3
+  font-size: 1rem; // text-sm
+  font-weight: 500; // font-medium
+  color: #4b51cf; // text-indigo-600
+  transition: all 0.3s ease; // transition-all
+
+  &:hover {
+    background-color: #4b51cf; // hover:bg-indigo-600
+    color: #ffffff; // hover:text-white
+  }
+}
+
+.footer-border-t {
+  border-top: 1px solid #ddd; // border-gray-100
+  padding-top: 2rem; // pt-8
+
+  @media (min-width: 1024px) {
+    padding-top: 4rem; // lg:pt-24
+  }
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-justify-center {
+  justify-content: center;
+}
+
+.footer-gap-4 {
+  gap: 1rem; // gap-4
+}
+
+.footer-text-xs {
+  font-size: 0.75rem; // text-xs
+}
+
+.footer-justify-end {
+  justify-content: flex-end;
+}
+
+.footer-mt-8 {
+  margin-top: 2rem; // mt-8
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.h-6 {
+  height: 1.5rem; // h-6
+}
+
+.w-6 {
+  width: 1.5rem; // w-6
+}
+
+.transition {
+  transition: all 0.3s ease; // transition-all
+}
+
+.hover\:opacity-75 {
+  &:hover {
+    opacity: 0.75;
+  }
+}

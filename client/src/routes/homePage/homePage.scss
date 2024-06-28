@@ -1,0 +1,116 @@
+@import "../../responsive.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+
+  .homePage {
+    display: flex;
+    height: 100vh;
+
+    .textContainer {
+      flex: 3;
+
+      .wrapper {
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 100%;
+
+        @include lg {
+          padding-right: 50px;
+        }
+
+        @include md {
+          padding: 0;
+        }
+
+        @include sm {
+          justify-content: flex-start;
+        }
+
+        .title {
+          font-size: 54px;
+
+          @include lg {
+            font-size: 48px;
+          }
+        }
+
+        .note {
+          font-size: 20px;
+        }
+
+        .boxes {
+          display: flex;
+          justify-content: space-between;
+
+          @include sm {
+            display: none;
+          }
+
+          h1 {
+            font-size: 36px;
+
+            @include lg {
+              font-size: 32px;
+            }
+          }
+
+          h2 {
+            font-size: 20px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .imgContainer {
+      flex: 1;
+      // background-color: #fcf5f3;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      @include md {
+        display: none;
+      }
+
+      img {
+        width: 115%;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        @include lg {
+          width: 105%;
+        }
+      }
+    }
+  }
+  .titles {
+    text-align: center;
+    margin: 80px 40px 30px 40px;
+    font-size: 35px;
+    font-weight: bold;
+    @include md {
+      font-size: 25px;
+    }
+    @include sm {
+      font-size: 20px;
+      margin-top: 150px;
+    }
+  }
+  .compos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
