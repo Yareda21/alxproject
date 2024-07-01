@@ -15,7 +15,7 @@ function Navbar() {
   if (currentUser) fetch();
 
   return (
-    <nav>
+    <nav className="total">
       <div className="left">
         <a href="/" className="logo">
           <img src="/OIP.JPEG" alt="" />

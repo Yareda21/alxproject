@@ -8,8 +8,9 @@ const Footer = () => {
           <h2 className="footer-heading">Sell and Buy Your Real Estate</h2>
 
           <p className="footer-paragraph">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-            maiores ipsum eos temporibus ea nihil.
+            Our vision is to revolutionize the real estate industry by
+            leveraging advanced technology and innovative solutions to provide a
+            seamless and efficient service for our users.
           </p>
 
           <a href="#" className="footer-cta">
