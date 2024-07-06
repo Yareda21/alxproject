@@ -1,4 +1,3 @@
-import React from "react";
 import "./contact.scss";
 import AgentCard from "../../components/agentCard/AgentCard";
 
@@ -39,7 +38,7 @@ const Contact = () => {
             />
             <AgentCard
               name={"Abiy Mengitstu"}
-              place={"Special Agent arrount Bole area"}
+              place={"Special Agent arrount Megenagna and CMC"}
               phone={"+251 123456789"}
               image={
                 "https://th.bing.com/th/id/OIP.ZyG7c7hS4wsrvYdOnJFyqQHaHa?w=178&h=178&c=7&r=0&o=5&pid=1.7"
