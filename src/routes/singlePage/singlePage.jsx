@@ -2,6 +2,7 @@ import "./singlePage.scss";
 import Slider from "../../components/slider/Slider";
 import Map from "../../components/map/Map";
 import { singlePostData, userData } from "../../lib/dummydata";
+import { Link } from "react-router-dom";
 
 function SinglePage() {
   return (
@@ -18,10 +19,6 @@ function SinglePage() {
                   <span>{singlePostData.address}</span>
                 </div>
                 <div className="price">$ {singlePostData.price}</div>
-              </div>
-              <div className="user">
-                <img src={userData.img} alt="" />
-                <span>{userData.name}</span>
               </div>
             </div>
             <div className="bottom">{singlePostData.description}</div>
@@ -99,12 +96,10 @@ function SinglePage() {
           </div>
           <div className="buttons">
             <button>
-              <img src="/chat.png" alt="" />
-              Send a Message
+              Call Us, - <br /> +251-12345678
             </button>
             <button>
-              <img src="/save.png" alt="" />
-              Save the Place
+              <Link to="/contact">Contact Us</Link>
             </button>
           </div>
         </div>
