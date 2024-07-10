@@ -4,11 +4,13 @@
   display: flex;
   flex-wrap: wrap;
   width: 300px;
+  border-radius: 10px;
 
   .class {
     position: relative;
     display: block;
     background-color: black;
+    border-radius: 35px;
 
     .image {
       position: absolute;
@@ -21,6 +23,7 @@
       object-fit: cover;
       opacity: 0.75;
       transition: opacity 0.3s ease; // Assuming a transition time and easing function, you can adjust this as needed
+      border-radius: 35px;
 
       // Group hover effect
       .group:hover & {
@@ -45,7 +48,7 @@
         font-weight: 500; // Equivalent to font-medium
         text-transform: uppercase; // Equivalent to uppercase
         letter-spacing: 0.1em; // Equivalent to tracking-widest
-        color: #ec4899; // Equivalent to text-pink-500
+        color: #ffffff; // Equivalent to text-pink-500
       }
       .para2 {
         font-size: 1.25rem; // Equivalent to text-xl

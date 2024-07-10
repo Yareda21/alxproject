@@ -3,6 +3,7 @@ import SearchBar from "../../components/searchBar/SearchBar";
 import "./homePage.scss";
 import Realestate from "../../components/realstate/Realestate";
 import { listData } from "../../lib/dummydata";
+
 function HomePage() {
   const data = listData;
   return (

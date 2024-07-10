@@ -1,10 +1,10 @@
 import "./filter.scss";
 
-function Filter() {
+function Filter({ location, maxPrice, minPrice, type }) {
   return (
     <div className="filter">
       <h1>
-        Search results for <b>London</b>
+        Search results for <b>{location}</b>
       </h1>
       <div className="top">
         <div className="item">
@@ -13,6 +13,7 @@ function Filter() {
             type="text"
             id="city"
             name="city"
+            value={location}
             placeholder="City Location"
           />
         </div>
@@ -21,6 +22,7 @@ function Filter() {
         <div className="item">
           <label htmlFor="type">Type</label>
           <select name="type" id="type">
+            <option selected>{type}</option>
             <option value="">any</option>
             <option value="buy">Buy</option>
             <option value="rent">Rent</option>
@@ -40,6 +42,7 @@ function Filter() {
           <label htmlFor="minPrice">Min Price</label>
           <input
             type="number"
+            value={minPrice}
             id="minPrice"
             name="minPrice"
             placeholder="any"
@@ -49,6 +52,7 @@ function Filter() {
           <label htmlFor="maxPrice">Max Price</label>
           <input
             type="text"
+            value={maxPrice}
             id="maxPrice"
             name="maxPrice"
             placeholder="any"
@@ -56,12 +60,7 @@ function Filter() {
         </div>
         <div className="item">
           <label htmlFor="bedroom">Bedroom</label>
-          <input
-            type="text"
-            id="bedroom"
-            name="bedroom"
-            placeholder="any"
-          />
+          <input type="text" id="bedroom" name="bedroom" placeholder="any" />
         </div>
         <button>
           <img src="/search.png" alt="" />
