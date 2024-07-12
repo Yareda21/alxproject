@@ -52,26 +52,6 @@ function HomePage() {
                 img={home.img}
               />
             ))}
-          {/* <Realestate
-            title="Real Estate 1"
-            location="Addis Ababa"
-            details="This is a detail note to be featched"
-          />
-          <Realestate
-            title="Real Estate 1"
-            location="Addis Ababa"
-            details="This is a detail note to be featched"
-          />
-          <Realestate
-            title="Real Estate 2"
-            location="Addis Ababa"
-            details="This is a detail note to be featched"
-          />
-          <Realestate
-            title="Real Estate 3"
-            location="Addis Ababa"
-            details="This is a detail note to be featched"
-          /> */}
         </div>
       </div>
       <Footer />
